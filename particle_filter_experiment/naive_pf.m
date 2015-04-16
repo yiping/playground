@@ -79,7 +79,7 @@ for i = 1:12
     XNew = []; YNew = [];
 
     r = rand(1)/N;
-    k=1;
+    k = 1;
     c = W(1);
     for j = 1:N
         U = r + (j-1)/N;
@@ -92,7 +92,7 @@ for i = 1:12
     end
 
     % resampled particles
-    XNew=XNew'; YNew=YNew';
+    XNew = XNew'; YNew = YNew';
     
     % update posiition (weighted sum)
     new_x_center = sum(XNew.*W);
